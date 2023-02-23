@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 px;
+    padding: 0 px;
+}
+
+.options-container{
+height: 3.4rem;
+width: 3.4rem;
+background-color: rgb(226, 225, 231);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+position: absolute;
+top: 2rem;
+left:2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 1.5rem;
+}
+
+.tools-container{
+    height: 3.5rem;
+    width: 50vw;
+    background-color: rgb(226, 225, 231);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    left:27rem;
+    top: 2rem;
+}
+.scale-tools{
+     animation-name: scale-tools ;
+     animation-duration: 1s;
+}
+@keyframes scale-tools{
+0%{
+    transform: scale(0.1);
+}
+100%{
+    transform: scale(1);
+}
+}
+
+.tools-container>*{
+    display: block;
+    font-size: 2rem;
+}
+
+.pencil-tool-container{
+    height: 5rem;
+    width: 7rem;
+    background-color: rgb(226, 225, 231);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 5.5rem;
+    left: 28.2vw;
+    border-radius: 3%;
+    display: none;
+}
+.pencil-width-container{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pencil-width-container input{
+    width: 80%;
+}
+.pencil-color-container{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.pencil-color{
+    height: 2rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.black{
+    background-color: black;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+
+.eraser-tool-container{
+    height: 2rem;
+    width: 7rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 225, 231);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 5.5rem;
+    left: 36.5vw;
+    border-radius: 3%;
+}
+.eraser-tool-container input{
+    width: 80%;
+}
+
+.fa-pencil{
+    display: none;
+}
+.fa-eraser{
+    display: none;
+}
+
+.stickycontainer{
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    top: 15rem;
+    left: 12rem;
+}
+.header-container{
+    height: 2rem;
+    background-color: rgb(226, 225, 231);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-container>*{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+.minimize{
+    background-color: cyan;
+}
+.remove{
+    background-color: darkred;
+}
+.note-container{
+height: calc(100% - 2rem);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "noteboard",
+  "version": "1.0.0",
+  "description": "",
+  "engines":{
+    "node": "v14.18.0",
+    "npm":"6.14.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.4.0"
+  }
+}
